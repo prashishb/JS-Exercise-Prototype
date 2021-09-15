@@ -86,6 +86,7 @@ Car.prototype.fill = function (gallons) {
   this.tank = this.tank + gallons;
 }
 
+// Stretch attempt
 // Car.prototype.drive = function (distance) {
 //   this.odometer += distance;
 //   this.tank = this.tank - (distance / this.milesPerGallon);
@@ -115,10 +116,13 @@ Baby.prototype.play = function () {
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. window/global binding - Has no context so it will be bound to the global object which is everything in the window
+  2. Implicit binding - left of the dot is what the keyword 'this' references to when function is invoked
+  3. New binding - using 'new' keyword we can create a new object where 'this' will reference the newly created object
+  4. Explicit binding:
+        -Call - A property of every function where the arguments passed will reference 'this' within the function.
+        -Apply - same as call but takes an array of arguments instead
+        -Bind - same as call but it returns a function that you can invoke at a later time
 */
 
 
